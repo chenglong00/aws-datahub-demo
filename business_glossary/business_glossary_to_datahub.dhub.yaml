@@ -1,0 +1,10 @@
+source:
+  type: datahub-business-glossary
+  config:
+    # Coordinates
+    file: business_glossary.dhub.yaml
+
+sink:
+  type: "datahub-rest"
+  config:
+    server: ${DATAHUB_REST_ENDPOINT}
